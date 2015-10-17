@@ -4,3 +4,4 @@ This is to learn how to set up an Angular app
 Configure a routing system
 create a main controller with dependency injection
 Use $http servies to fetch data from a json file.
+use plunker to host the project in the browser
