@@ -1,33 +1,15 @@
 
 <h2>Services</h2>
-<div class='row service'>
-  <div class='col-md-2'>
-    <img src='http://techguystaging.com/files/computer-icon.png'>
-  </div>
-  <div class='col-md-10'>
-    <h3>Hardware Repair</h3>
-    <p>Proin sodales, felis et ornare ornare, nibh libero placerat massa, non ultrices nunc metus nec neque. Sed lacus neque, luctus cursus pharetra quis, faucibus sit amet lorem. Vivamus ornare nec ante sit amet vulputate. Morbi non nisl ut risus lacinia mattis non non mi. Suspendisse nunc diam, dapibus nec ullamcorper eu, sagittis in ligula. Morbi eu lacus pretium, tempus erat eu, accumsan leo. Fusce at massa nibh. Vestibulum fringilla eros felis, at porta arcu maximus et. Integer suscipit augue odio, et finibus velit venenatis non. Etiam gravida pharetra porta. In tempor justo ligula, venenatis euismod velit porttitor iaculis. Mauris in urna suscipit, gravida ipsum sit amet, vestibulum mi. Etiam placerat mi vel maximus tempor.</p>
-    <a href="contact.html"  class='btn btn-primary'>Contact Us</a>
-  </div>
-</div>
-<div class='row service'>
-  <div class='col-md-2'>
-    <img src='http://techguystaging.com/files/computer-icon.png'>
-  </div>
-  <div class='col-md-10'>
-    <h3>Hardware Repair</h3>
-    <p>Proin sodales, felis et ornare ornare, nibh libero placerat massa, non ultrices nunc metus nec neque. Sed lacus neque, luctus cursus pharetra quis, faucibus sit amet lorem. Vivamus ornare nec ante sit amet vulputate. Morbi non nisl ut risus lacinia mattis non non mi. Suspendisse nunc diam, dapibus nec ullamcorper eu, sagittis in ligula. Morbi eu lacus pretium, tempus erat eu, accumsan leo. Fusce at massa nibh. Vestibulum fringilla eros felis, at porta arcu maximus et. Integer suscipit augue odio, et finibus velit venenatis non. Etiam gravida pharetra porta. In tempor justo ligula, venenatis euismod velit porttitor iaculis. Mauris in urna suscipit, gravida ipsum sit amet, vestibulum mi. Etiam placerat mi vel maximus tempor.</p>
-    <a href="contact.html"  class='btn btn-primary'>Contact Us</a>
-  </div>
-</div>
-<div class='row service'>
-  <div class='col-md-2'>
-    <img src='http://techguystaging.com/files/computer-icon.png'>
-  </div>
-  <div class='col-md-10'>
-    <h3>Hardware Repair</h3>
-    <p>Proin sodales, felis et ornare ornare, nibh libero placerat massa, non ultrices nunc metus nec neque. Sed lacus neque, luctus cursus pharetra quis, faucibus sit amet lorem. Vivamus ornare nec ante sit amet vulputate. Morbi non nisl ut risus lacinia mattis non non mi. Suspendisse nunc diam, dapibus nec ullamcorper eu, sagittis in ligula. Morbi eu lacus pretium, tempus erat eu, accumsan leo. Fusce at massa nibh. Vestibulum fringilla eros felis, at porta arcu maximus et. Integer suscipit augue odio, et finibus velit venenatis non. Etiam gravida pharetra porta. In tempor justo ligula, venenatis euismod velit porttitor iaculis. Mauris in urna suscipit, gravida ipsum sit amet, vestibulum mi. Etiam placerat mi vel maximus tempor.</p>
-    <a href="contact.html"  class='btn btn-primary'>Contact Us</a>
+<div ng-repeat="service in services">
+  <div class='row service'>
+    <div class='col-md-2'>
+      <img ng-src='http://techguystaging.com/files/{{service.image}}'>
+    </div>
+    <div class='col-md-10'>
+      <h3>{{service.name}}</h3>
+      <p>{{service.description}}</p>
+      <a href="contact.html"  class='btn btn-primary'>Contact Us</a>
+    </div>
   </div>
 </div>
 
