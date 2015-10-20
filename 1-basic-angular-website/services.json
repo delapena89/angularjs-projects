@@ -1,0 +1,27 @@
+[
+{
+  "id": 1,
+  "name": "Hardware Repair",
+  "description": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.Etiam scelerisque mattis luctus. Quisque tempus, metus sed placerat condimentum, felis lorem porttitor arcu, non lobortis massa nunc in urna. Mauris gravida euismod viverra. Sed mollis arcu sit amet pulvinar tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque volutpat lectus et sapien fermentum, in aliquet erat aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id eleifend justo. Proin quis odio vitae nulla maximus ullamcorper. Curabitur rutrum venenatis volutpat. Aenean molestie ante in luctus vulputate. Integer non dignissim lorem. Suspendisse potenti. Pellentesque porta tortor eget efficitur dignissim. Donec id risus rhoncus, sagittis ipsum in, aliquam tortor. Donec vel ultricies velit.",
+  "image": "computer-icon.png"
+  },
+  {
+  "id": 2,
+  "name": "Virus Removal",
+  "description": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.Etiam scelerisque mattis luctus. Quisque tempus, metus sed placerat condimentum, felis lorem porttitor arcu, non lobortis massa nunc in urna. Mauris gravida euismod viverra. Sed mollis arcu sit amet pulvinar tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque volutpat lectus et sapien fermentum, in aliquet erat aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id eleifend justo. Proin quis odio vitae nulla maximus ullamcorper. Curabitur rutrum venenatis volutpat. Aenean molestie ante in luctus vulputate. Integer non dignissim lorem. Suspendisse potenti. Pellentesque porta tortor eget efficitur dignissim. Donec id risus rhoncus, sagittis ipsum in, aliquam tortor. Donec vel ultricies velit.",
+  "image": "computer-icon.png"
+  },
+  {
+  "id": 3,
+  "name": "System Tuneup",
+  "description": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.Etiam scelerisque mattis luctus. Quisque tempus, metus sed placerat condimentum, felis lorem porttitor arcu, non lobortis massa nunc in urna. Mauris gravida euismod viverra. Sed mollis arcu sit amet pulvinar tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque volutpat lectus et sapien fermentum, in aliquet erat aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus id eleifend justo. Proin quis odio vitae nulla maximus ullamcorper. Curabitur rutrum venenatis volutpat. Aenean molestie ante in luctus vulputate. Integer non dignissim lorem. Suspendisse potenti. Pellentesque porta tortor eget efficitur dignissim. Donec id risus rhoncus, sagittis ipsum in, aliquam tortor. Donec vel ultricies velit.",
+  "image": "computer-icon.png"
+  }
+]
+
+
+
+
+
+
+
