@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Lynn Location",
+    "street_address": "333 Walnut Street",
+    "city": "Lynn",
+    "state": "MA",
+    "zip": "01902",
+    "phone": "781-555-5555"
+  },
+    {
+    "id": 1,
+    "name": "Denver Location",
+    "street_address": "1000 Speer Street",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80204",
+    "phone": "720-555-5555"
+  },
+    {
+    "id": 1,
+    "name": "Boulder Location",
+    "street_address": "1 Walnut Street",
+    "city": "Boulder",
+    "state": "CO",
+    "zip": "80031",
+    "phone": "303-555-5555"
+  }
+]
+
+

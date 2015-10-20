@@ -1,24 +1,14 @@
 
-          <h2>Contact</h2>
-            <p>Please email support@computersolutions.fake</p>
-          <h3>Location</h3>
-            <ul class='location'>
-              <li>Lynn Location</li>
-              <li>333 Walnut Street</li>
-              <li>Lynn MA, 01902</li>
-              <li>781-555-5555</li>
-            </ul>
-            <ul class='location'>
-              <li>Denver Location</li>
-              <li>1000 Speer Street</li>
-              <li>Denver CO, 80204</li>
-              <li>720-555-5555</li>
-            </ul><ul class='location'>
-              <li>Boulder Location</li>
-              <li>1 Walnut Street</li>
-              <li>Boulder C), 80031</li>
-              <li>303-555-5555</li>
-            </ul>
-
+<h2>Contact</h2>
+  <p>Please email support@computersolutions.fake</p>
+  <h3>Location</h3>
+    <div ng-repeat='location in locations'>
+      <ul class='location'>
+        <li>{{location.name}}</li>
+        <li>{{location.street_address}}</li>
+        <li>{{location.city}} {{location.state}}, {{location.zip}}</li>
+        <li>{{location.phone}}</li>
+      </ul>
+    </div>
 
 
