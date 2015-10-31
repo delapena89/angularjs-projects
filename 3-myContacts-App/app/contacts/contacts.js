@@ -12,7 +12,7 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
 
 // contacts controller
 .controller('ContactsCtrl', ['$scope', '$firebaseArray', function($scope, $firebaseArray) {
-  // init firebase
+  // Init firebase
   var ref = new Firebase('https://1mycontacts-app.firebaseio.com/contacts');
 
   // get contacts
@@ -45,6 +45,7 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
   // hide forms
   $scope.hide = function() {
     $scope.addFormShow = false;
+    $scope.contactShow = false;
   };
 
 
@@ -88,9 +89,11 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
       var id = ref.key();
       console.log('Added Contact with ID: ' +id);
 
+      // clear form
+      clearFields();
+
       // hide form
       $scope.addFormShow = false;
-      $scope.contactShow = false;
 
       // send message
       $scope.msg = "Contact Added";
@@ -114,13 +117,13 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
     record.phones[0].home = $scope.home_phone;
     record.phones[0].mobile = $scope.mobile_phone;
     record.address[0].street_address = $scope.street_address_phone;
-    record.address[0].city = $scope.city_phone;
-    record.address[0].state = $scope.state_phone;
-    record.address[0].zipcode = $scope.zipcode_phone;
+    record.address[0].city = $scope.city;
+    record.address[0].state = $scope.state;
+    record.address[0].zipcode = $scope.zipcode;
 
     // save contact
     $scope.contacts.$save(record).then(function(ref){
-      console.log('ref.key');
+      console.log(ref.key);
     });
 
     clearFields();
@@ -160,6 +163,7 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
 
   function clearFields() {
     console.log('Clearing All Fields...');
+
     $scope.name = '';
     $scope.email = '';
     $scope.company = '';
@@ -170,11 +174,7 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
     $scope.city = '';
     $scope.state = '';
     $scope.zipcode = '';
-
-
-
   }
-
 }]);
 
 
