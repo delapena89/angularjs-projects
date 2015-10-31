@@ -1,5 +1,6 @@
 <div class='row' ng-controller='ContactsCtrl'>
-
+<div class='large-10 columns'>
+  <div data-alert ng-show='msg' class='alert-box'>{{msg}}</div>
 <form ng-submit='addFormSubmit()' ng-show='addFormShow'>
       <h3>Add Contact</h3>
       <!-- Add Form -->
@@ -86,7 +87,7 @@
         </thead>
         <tbody>
           <tr ng-repeat='contact in contacts'>
-            <td><a href="#">{{contact.name}}</a></td>
+            <td><a ng-click='showContact(contact)'>{{contact.name}}</a></td>
             <td>{{contact.company}}</td>
             <td>{{contact.email}}</td>
             <td><a class='button tiny' ng-click="showEditForm(contact)">Edit</a>
