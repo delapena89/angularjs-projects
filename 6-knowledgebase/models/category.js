@@ -11,11 +11,11 @@ var categorySchema = mongoose.Schema({
   }
 });
 
-var Category = module.exports =mongoose.model('Category', categorySchema);
+var Category = module.exports = mongoose.model('Category', categorySchema);
 
 
 // Get ALL articles
-module.exports.getCategoires = function(callback) {
+module.exports.getCategories = function(callback) {
   Category.find(callback);
 };
 
