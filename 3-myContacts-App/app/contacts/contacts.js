@@ -25,6 +25,23 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
     $scope.addFormShow = true;
   };
 
+  // show edit form
+  $scope.showEditForm = function(contact) {
+    $scope.editFormShow = true;
+
+    $scope.id                   = contact.$id;
+    $scope.name                 = contact.name;
+    $scope.email                = contact.email;
+    $scope.company              = contact.company;
+    $scope.work_phone           = contact.phones[0].work;
+    $scope.home_phone           = contact.phones[0].home;
+    $scope.mobile_phone         = contact.phones[0].mobile;
+    $scope.street_address       = contact.address[0].street_address;
+    $scope.city                 = contact.address[0].city;
+    $scope.state                = contact.address[0].state;
+    $scope.zipcode              = contact.address[0].zipcode;
+  };
+
   // hide forms
   $scope.hide = function() {
     $scope.addFormShow = false;
@@ -71,12 +88,74 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
       var id = ref.key();
       console.log('Added Contact with ID: ' +id);
 
-      // hide from
+      // hide form
       $scope.addFormShow = false;
+      $scope.contactShow = false;
 
       // send message
       $scope.msg = "Contact Added";
     });
+  };
+
+  $scope.editFormSubmit = function() {
+    console.log('Updating Contact...');
+
+    // get ID
+    var id = $scope.id;
+
+    // get Record
+    var record = $scope.contacts.$getRecord(id);
+
+    //Assign Values
+    record.name = $scope.name;
+    record.email = $scope.email;
+    record.company = $scope.company;
+    record.phones[0].work = $scope.work_phone;
+    record.phones[0].home = $scope.home_phone;
+    record.phones[0].mobile = $scope.mobile_phone;
+    record.address[0].street_address = $scope.street_address_phone;
+    record.address[0].city = $scope.city_phone;
+    record.address[0].state = $scope.state_phone;
+    record.address[0].zipcode = $scope.zipcode_phone;
+
+    // save contact
+    $scope.contacts.$save(record).then(function(ref){
+      console.log('ref.key');
+    });
+
+    clearFields();
+
+    // hide edit form
+    $scope.editFormShow = false;
+
+    $scope.msg = 'Contact Updated';
+};
+
+
+  $scope.showContact = function(contact) {
+    console.log("Getting Contact");
+
+    $scope.name = contact.name;
+    $scope.email = contact.email;
+    $scope.company = contact.company;
+    $scope.work_phone = contact.phones[0].work;
+    $scope.home_phone = contact.phones[0].home;
+    $scope.mobile_phone = contact.phones[0].mobile;
+    $scope.street_address = contact.address[0].street_address;
+    $scope.city = contact.address[0].city;
+    $scope.state = contact.address[0].state;
+    $scope.zipcode = contact.address[0].zipcode;
+
+    $scope.contactShow = true;
+
+  };
+
+  $scope.removeContact = function(contact) {
+    console.log('Removing Contact');
+
+    $scope.contacts.$remove(contact);
+
+    $scope.msg = "Contact Removed";
   };
 
   function clearFields() {
