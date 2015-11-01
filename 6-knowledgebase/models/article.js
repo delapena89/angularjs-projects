@@ -21,7 +21,7 @@ var articleSchema = mongoose.Schema({
   }
 });
 
-var Article = module.exports =mongoose.model('Article', articleSchema);
+var Article = module.exports = mongoose.model('Article', articleSchema);
 
 
 // Get ALL articles
