@@ -9,3 +9,4 @@ angular.module('myContacts', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/contacts'});
 }]);
+
